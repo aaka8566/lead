@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import Locationcard from './Locationcard';
 const Results = () => {
     const {isloading,issuccess,locations,iserror}=useSelector(store=>store.locationreducer);
-console.log(Object.keys(locations).length);
-console.log(iserror);
+//console.log(Object.keys(locations).length);
+//console.log(iserror);
   return (
     <Box sx={{marginTop:"4rem",border:"0px solid green"}}>
         <Box>
