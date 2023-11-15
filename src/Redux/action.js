@@ -22,6 +22,7 @@ const data=response.data;
 dispatch(GETSUCCESS(data));
 }
 catch{
+    console.log("hello");
 dispatch(GETERROR());
 }
 }        

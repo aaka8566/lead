@@ -7,9 +7,7 @@ const Search = () => {
     const [code,setcode]=useState("");
     const {location ,isloading}=useSelector((store)=>store. locationreducer);
     const dispatch=useDispatch();
-useEffect(()=>{
 
-},[code])
     const handlesubmit=(e)=>{
         e.preventDefault();
       //  console.log(code);
