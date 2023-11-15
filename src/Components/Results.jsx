@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import Locationcard from './Locationcard';
 const Results = () => {
     const {isloading,issuccess,locations,iserror}=useSelector(store=>store.locationreducer);
-//console.log(Object.keys(locations).length);
-
+console.log(Object.keys(locations).length);
+console.log(iserror);
   return (
     <Box sx={{marginTop:"4rem",border:"0px solid green"}}>
         <Box>
@@ -17,7 +17,10 @@ const Results = () => {
     
 ))
 :
-<Box sx={{height:"200px",width:"100%",backgroundImage:"url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBytBl9azUgKlU5Z_2jsd1jOLeiF0cCg0DPA&usqp=CAU')",backgroundSize:"30%",backgroundPosition:"center"}}></Box>
+<Box sx={{}}>
+{iserror?<Box sx={{height:"200px",width:"100%",backgroundImage:"url('https://media.tenor.com/eDchk3srtycAAAAj/piffle-error.gif')",backgroundSize:"10%",backgroundPosition:"center"}}></Box>:<Box sx={{height:"200px",width:"100%",backgroundImage:"url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBytBl9azUgKlU5Z_2jsd1jOLeiF0cCg0DPA&usqp=CAU')",backgroundSize:"30%",backgroundPosition:"center"}}></Box>}
+
+</Box>
 }
 </Box>
         </Box>

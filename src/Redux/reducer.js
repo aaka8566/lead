@@ -7,9 +7,9 @@ const initialstate={
 };
 export const reducer=(state=initialstate,action)=>{
     switch(action.type){
-        case getrequest:return {...state,isloading:true}
-        case getsuccess:return {...state,locations:action.payload,isloading:false,issuccess:true}
-        case geterror:return {...state,isloading:false,iserror:true}
+        case getrequest:return {...state,isloading:true,iserror:false}
+        case getsuccess:return {...state,locations:action.payload,isloading:false,issuccess:true,iserror:false }
+        case geterror:return {...state,locations:[],isloading:false,iserror:true}
         case reset:return{...initialstate}
         default:return state;
     }
