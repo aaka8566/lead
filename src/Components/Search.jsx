@@ -12,7 +12,7 @@ useEffect(()=>{
 },[code])
     const handlesubmit=(e)=>{
         e.preventDefault();
-        console.log(code);
+      //  console.log(code);
         dispatch(getalllocationsuccess(code));
     }
  

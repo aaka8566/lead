@@ -6,7 +6,7 @@ const Results = () => {
     const {isloading,issuccess,locations}=useSelector(store=>store.locationreducer);
 //console.log(Object.keys(locations).length);
     useEffect(()=>{
-       console.log("lo",locations);
+       //console.log("lo",locations);
     },[isloading])
   return (
     <Box sx={{marginTop:"4rem",border:"0px solid green"}}>

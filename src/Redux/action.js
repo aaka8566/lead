@@ -18,7 +18,7 @@ dispatch(GETREQUEST());
 try{
 const response=await axios.get(`https://api.zippopotam.us/in/${pin}`);
 const data=response.data;
-console.log(data);
+//console.log(data);
 dispatch(GETSUCCESS(data));
 }
 catch{

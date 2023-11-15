@@ -2,7 +2,7 @@ import { Box, Stack } from '@mui/material'
 import React from 'react'
 
 const Locationcard = ({data,country,datakey}) => {
-    console.log(data);
+   // console.log(data);
   return (
     <Stack sx={{paddingLeft:"2rem",paddingRight:"0.5rem" }} display="grid" gridTemplateColumns="repeat(4,5% 25% 25% 38%)"  >
         <Box >{datakey+1}.</Box>
